@@ -130,4 +130,20 @@
 ### 一次build好幾種格式的book
 
 -   如果你想同時build: gitbook(i.e. 網頁電子書)、pdf_book、epub_book，那你可以按`Build`頁籤下的`Build Book`，他就會一次幫你build完
--   如果你在`_output.yml`中，只有設定`bookdown::gitbook:`，那其實你用這邊的`Build Book`，或是剛剛講的`Preview Book`，其實是完全一樣的
+-   如果你在`_output.yml`中，只有設定`bookdown::gitbook:`，那其實你用這邊的`Build Book`，或是剛剛講的`Preview Book`，其實是完全一樣的  
+
+## push到github  
+
+* 在github先開個專案，名稱取的和現在這個專案一樣，記得不要勾README  
+* 接著就push上去吧！  
+
+```
+git remote add origin git@github.com:LeeHank/bookdown_tutorial.git
+git push -u origin master
+```
+
+* 接著進到github的這個專案，選上方的`Settings`，再從左邊的分類中找到`Pages`。  
+* 在source的地方，選`Branch:master`，以及`/docs`，按下save，就搞定了  
+* 他會顯示，我們的網頁被publish在 https://leehank.github.io/bookdown_tutorial/  
+* 所以這串網址很規律：`https://{username}.github.in/{repository}`  
+

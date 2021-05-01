@@ -1,1 +1,3 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+* 自己試試看bookdown  
+* 主要是參考這本書第五章：[rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/make-book.html)  
+* 官方文件在這：[bookdown](https://bookdown.org/yihui/bookdown/)
