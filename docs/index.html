@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Bookdown Tutorial</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Bookdown Tutorial" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="LeeHank/temp.spat.pca3" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bookdown Tutorial" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Hank Lee" />
+
+
+<meta name="date" content="2021-04-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="get-started.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a></li>
+<li class="chapter" data-level="1" data-path="get-started.html"><a href="get-started.html"><i class="fa fa-check"></i><b>1</b> Get Started</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="get-started.html"><a href="get-started.html#初始化bookdown專案"><i class="fa fa-check"></i><b>1.1</b> 初始化bookdown專案</a></li>
+<li class="chapter" data-level="1.2" data-path="get-started.html"><a href="get-started.html#更新_bookdown.yml中的內容"><i class="fa fa-check"></i><b>1.2</b> 更新_bookdown.yml中的內容：</a></li>
+<li class="chapter" data-level="1.3" data-path="get-started.html"><a href="get-started.html#調整_output.yml的內容"><i class="fa fa-check"></i><b>1.3</b> 調整_output.yml的內容</a></li>
+<li class="chapter" data-level="1.4" data-path="get-started.html"><a href="get-started.html#調整index.rmd"><i class="fa fa-check"></i><b>1.4</b> 調整index.Rmd</a></li>
+<li class="chapter" data-level="1.5" data-path="get-started.html"><a href="get-started.html#調整新增自己的.rmd檔案"><i class="fa fa-check"></i><b>1.5</b> 調整/新增自己的.Rmd檔案</a></li>
+<li class="chapter" data-level="1.6" data-path="get-started.html"><a href="get-started.html#關閉jekyll"><i class="fa fa-check"></i><b>1.6</b> 關閉Jekyll</a></li>
+<li class="chapter" data-level="1.7" data-path="get-started.html"><a href="get-started.html#build-a-book"><i class="fa fa-check"></i><b>1.7</b> Build a book</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="get-started.html"><a href="get-started.html#不要按knit"><i class="fa fa-check"></i><b>1.7.1</b> 不要按<code>Knit</code></a></li>
+<li class="chapter" data-level="1.7.2" data-path="get-started.html"><a href="get-started.html#按preview-book來build-gitbook"><i class="fa fa-check"></i><b>1.7.2</b> 按Preview Book來build gitbook</a></li>
+<li class="chapter" data-level="1.7.3" data-path="get-started.html"><a href="get-started.html#key-入-preview_chaptermy-chapter.rmd"><i class="fa fa-check"></i><b>1.7.3</b> key 入 <code>preview_chapter("my-chapter.Rmd")</code></a></li>
+<li class="chapter" data-level="1.7.4" data-path="get-started.html"><a href="get-started.html#一次build好幾種格式的book"><i class="fa fa-check"></i><b>1.7.4</b> 一次build好幾種格式的book</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="detail.html"><a href="detail.html"><i class="fa fa-check"></i><b>2</b> Detail</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="detail.html"><a href="detail.html#調整地圖"><i class="fa fa-check"></i><b>2.1</b> 調整地圖</a></li>
+<li class="chapter" data-level="2.2" data-path="detail.html"><a href="detail.html#與章節組織有關的調整"><i class="fa fa-check"></i><b>2.2</b> 與章節組織有關的調整</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="detail.html"><a href="detail.html#設定章節順序"><i class="fa fa-check"></i><b>2.2.1</b> 設定章節順序</a></li>
+<li class="chapter" data-level="2.2.2" data-path="detail.html"><a href="detail.html#有些章節我想隱藏起來"><i class="fa fa-check"></i><b>2.2.2</b> 有些章節我想隱藏起來</a></li>
+<li class="chapter" data-level="2.2.3" data-path="detail.html"><a href="detail.html#設定章節前綴"><i class="fa fa-check"></i><b>2.2.3</b> 設定章節前綴</a></li>
+<li class="chapter" data-level="2.2.4" data-path="detail.html"><a href="detail.html#章節的unnumbering"><i class="fa fa-check"></i><b>2.2.4</b> 章節的(un)numbering</a></li>
+<li class="chapter" data-level="2.2.5" data-path="detail.html"><a href="detail.html#設定toc只顯示第一二層標題"><i class="fa fa-check"></i><b>2.2.5</b> 設定TOC只顯示第一/二層標題</a></li>
+<li class="chapter" data-level="2.2.6" data-path="detail.html"><a href="detail.html#設定toc的header和footer"><i class="fa fa-check"></i><b>2.2.6</b> 設定TOC的header和footer</a></li>
+<li class="chapter" data-level="2.2.7" data-path="detail.html"><a href="detail.html#toc中把相似的章節組成一個區塊"><i class="fa fa-check"></i><b>2.2.7</b> TOC中，把相似的章節組成一個區塊</a></li>
+<li class="chapter" data-level="2.2.8" data-path="detail.html"><a href="detail.html#增加appendix"><i class="fa fa-check"></i><b>2.2.8</b> 增加appendix</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="detail.html"><a href="detail.html#和美感有關的調整code-highlighting"><i class="fa fa-check"></i><b>2.3</b> 和美感有關的調整：Code highlighting</a></li>
+<li class="chapter" data-level="2.4" data-path="detail.html"><a href="detail.html#和sharing有關的調整"><i class="fa fa-check"></i><b>2.4</b> 和sharing有關的調整</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="detail.html"><a href="detail.html#讓讀者可以下載source-code-或-edit-建議"><i class="fa fa-check"></i><b>2.4.1</b> 讓讀者可以下載source code 或 edit 建議</a></li>
+<li class="chapter" data-level="2.4.2" data-path="detail.html"><a href="detail.html#讓讀者下載成pdf-or-rmd-file"><i class="fa fa-check"></i><b>2.4.2</b> 讓讀者下載成pdf or rmd file</a></li>
+<li class="chapter" data-level="2.4.3" data-path="detail.html"><a href="detail.html#讓讀者連回你的github"><i class="fa fa-check"></i><b>2.4.3</b> 讓讀者連回你的github</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="detail.html"><a href="detail.html#其他之後有時間再整理的內容"><i class="fa fa-check"></i><b>2.5</b> 其他之後有時間再整理的內容</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="detail.html"><a href="detail.html#index.rmd裡面還很多不知道在寫啥的"><i class="fa fa-check"></i><b>2.5.1</b> index.Rmd裡面還很多不知道在寫啥的</a></li>
+<li class="chapter" data-level="2.5.2" data-path="detail.html"><a href="detail.html#rmd裡面還可以設定各種可用的細節"><i class="fa fa-check"></i><b>2.5.2</b> .Rmd裡面還可以設定各種可用的細節</a></li>
+<li class="chapter" data-level="2.5.3" data-path="detail.html"><a href="detail.html#footnotes"><i class="fa fa-check"></i><b>2.5.3</b> Footnotes</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bookdown Tutorial</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Bookdown Tutorial</h1>
+<p class="author"><em>Hank Lee</em></p>
+<p class="date"><em>2021-04-30</em></p>
+</div>
+<div id="前言" class="section level1 unnumbered">
+<h1>前言</h1>
+<ul>
+<li>寫些前言(屁話)在這…</li>
+</ul>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="get-started.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

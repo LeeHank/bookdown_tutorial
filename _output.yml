@@ -1,0 +1,10 @@
+bookdown::gitbook:
+  config:
+    toc:
+      collapse: section
+    download: ["rmd"]
+    sharing:
+      github: yes
+      facebook: no
+      twitter: no
+      all: no

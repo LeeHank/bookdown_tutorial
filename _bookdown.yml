@@ -1,0 +1,11 @@
+book_filename: "bookdown_tutorial"
+delete_merged_file: true
+output_dir: docs   
+language:
+  ui:
+    chapter_name: "Chapter "
+new_session: true
+rmd_files:
+- index.Rmd
+- 01-get_started.Rmd
+- 02-detail.Rmd
