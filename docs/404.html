@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Get Started | Bookdown Tutorial</title>
+  <title>Page not found | Bookdown Tutorial</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Get Started | Bookdown Tutorial" />
+  <meta property="og:title" content="Page not found | Bookdown Tutorial" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="LeeHank/bookdown_tutorial" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Get Started | Bookdown Tutorial" />
+  <meta name="twitter:title" content="Page not found | Bookdown Tutorial" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="detail.html"/>
+
+
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -75,7 +75,7 @@
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#cheatsheet"><i class="fa fa-check"></i><b>0.2</b> Cheatsheet</a>
 <ul>
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#建立-r-project-renvgitbookdown"><i class="fa fa-check"></i><b>0.2.1</b> 建立 R Project (renv+git+bookdown)</a></li>
-<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#修改-_bookdown.yml-內容"><i class="fa fa-check"></i><b>0.2.2</b> 修改 <code>_bookdown.yml</code> 內容</a></li>
+<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#修改三個-yaml-檔"><i class="fa fa-check"></i><b>0.2.2</b> 修改三個 YAML 檔</a></li>
 <li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#新增-.nojekyll-檔案"><i class="fa fa-check"></i><b>0.2.3</b> 新增 <code>.nojekyll</code> 檔案</a></li>
 <li class="chapter" data-level="0.2.4" data-path="index.html"><a href="index.html#compile-book"><i class="fa fa-check"></i><b>0.2.4</b> Compile book</a></li>
 <li class="chapter" data-level="0.2.5" data-path="index.html"><a href="index.html#commit-push"><i class="fa fa-check"></i><b>0.2.5</b> Commit &amp; Push</a></li>
@@ -144,204 +144,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="get-started" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Get Started</h1>
-<div id="初始化bookdown專案" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> 初始化bookdown專案</h2>
-<ul>
-<li><p>開始一個bookdown專案很簡單，先在Rstudio開啟一個新專案，選bookdown<br />
-</p></li>
-<li><p>開起來後，這個專案資料夾中，就會長成下圖：<br />
-<img src="pics/initial.jpg" /></p></li>
-<li><p>可以看到，這個資料夾下的結構，包括幾大塊：</p>
-<ul>
-<li>3 個 YAML檔： _bookdown.yml, _output.yml, index.Rmd<br />
-</li>
-<li>6 個範例.rmd檔: 01-Intro.Rmd, …, 06-reference.Rmd<br />
-</li>
-<li>git檔： .git資料夾和.gitignore<br />
-</li>
-<li>其他optional可以刪掉的檔：book.bib, preamble.tex, style.css這些<br />
-</li>
-</ul></li>
-<li><p>這邊先介紹三個重要的YAML檔：</p>
-<ul>
-<li>_bookdown.yml: 裡面可以設定章節順序、build出的html/pdf等要output到哪個資料夾<br />
-</li>
-<li>_output.yml: 裡面可以設定你要output的格式(e.g. html電子書, pdf, ePub…)，sidebar的toc想長成怎樣(e.g. header, footer, 或是collapse sub-section)，電子書上提供作者github連結、download連結<br />
-</li>
-<li>index.Rmd: 這會是網頁電子書的homepage，或是pdf書籍的preface。</li>
-</ul></li>
-</ul>
-</div>
-<div id="更新_bookdown.yml中的內容" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> 更新_bookdown.yml中的內容：</h2>
-<ul>
-<li>打開原本的<code>_bookdown.yml</code>，並幫他新增兩行指令，變成下面這樣：</li>
-</ul>
-<!-- -->
-<pre><code>book_filename: &quot;bookdown_tutorial&quot;
-delete_merged_file: true
-language:
-  ui:
-    chapter_name: &quot;Chapter &quot;
-output_dir: docs   
-new_session: true</code></pre>
-<ul>
-<li><p>一個一個解釋：</p>
-<ul>
-<li><code>book_filename: "bookdown_tutorial"</code>，這很明顯就是書籍的名稱<br />
-</li>
-<li><code>delete_merged_file: true</code>： build book時，他會把k個.Rmd檔，先compile成k個.html檔，然後再merge成一個大的.html檔。那這邊設定true，就是只要留merge好的檔就好，原本那k個html檔請幫我刪掉<br />
-</li>
-<li><code>chapter_name: "Chapter "</code>：這會幫你把每個章節的前面，都加上<code>Chapter</code>的字樣<br />
-</li>
-<li><code>output_dir: docs</code>，這是新加入的指令，要求把build出來的html檔，都放到<code>./docs</code>的資料夾中。會做這樣的設定，是因為之後如果要把這本書，發佈到github pages(或是Netlify)，他們都是去<code>./docs</code>裡面找html檔。<br />
-</li>
-<li><code>new_session: true</code>：這也是新加入的指令，他的意思是，我會獨立的對每個.Rmd檔做complie，並生出各自的html檔。如果沒做這個設定，那他會先把所有.Rmd檔都merge成一個超大.Rmd檔，然後compile這個超大的.Rmd檔，變成1個html檔。那這樣就很容易因為不同的.Rmd檔裡面用到相同名稱的變數，而造成彼此衝突。</li>
-</ul></li>
-</ul>
-</div>
-<div id="調整_output.yml的內容" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> 調整_output.yml的內容</h2>
-<ul>
-<li>打開<code>_output.yml</code>這個檔案，原本長這樣：</li>
-</ul>
-<!-- -->
-<pre><code>bookdown::gitbook:
-  css: style.css
-  config:
-    toc:
-      before: |
-        &lt;li&gt;&lt;a href=&quot;./&quot;&gt;A Minimal Book Example&lt;/a&gt;&lt;/li&gt;
-      after: |
-        &lt;li&gt;&lt;a href=&quot;https://github.com/rstudio/bookdown&quot; target=&quot;blank&quot;&gt;Published with bookdown&lt;/a&gt;&lt;/li&gt;
-    download: [&quot;pdf&quot;, &quot;epub&quot;]
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default</code></pre>
-<ul>
-<li><p>從架構上，就可以看到，他要output成三種格式：</p>
-<ul>
-<li>gitbook<br />
-</li>
-<li>pdf_book<br />
-</li>
-<li>epub_book<br />
-</li>
-</ul></li>
-<li><p>那因為，我只有興趣gitbook格式(就是html網頁拉)，所以我會先把pdf_book和epub_book都刪掉<br />
-</p></li>
-<li><p>接著講解<code>bookdown::gitbook</code>下的設定：</p>
-<ul>
-<li><code>css: style.css</code>:<br />
-</li>
-<li><code>config</code>下，他設定了<code>toc</code>和<code>download</code>這兩塊。<code>toc</code>是網頁左側的outline，他加上<code>before</code>和<code>after</code>，意思是想把toc排列成 <code>before message -&gt; chapter names -&gt; after message</code> 這樣。我們現在從簡，所以刪光before和after。另外，<code>download</code>，是要做出download的按鈕，讓user可以把html下載成pdf或epub。<br />
-</li>
-</ul></li>
-<li><p>最終，我們只保留<code>gitbook</code>的part，並刪除css, 刪除config下的toc，改動download的內容，變成：</p></li>
-</ul>
-<!-- -->
-<pre><code>    bookdown::gitbook:
-      config:
-        download: [&quot;pdf&quot;, &quot;epub&quot;]</code></pre>
-</div>
-<div id="調整index.rmd" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> 調整index.Rmd</h2>
-<ul>
-<li>記得，<code>index.Rmd</code>是唯一可以在最上面寫YAML指令的檔案，其他.Rmd檔都不行</li>
-</ul>
-</div>
-<div id="調整新增自己的.rmd檔案" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> 調整/新增自己的.Rmd檔案</h2>
-<ul>
-<li>現在可以把根目錄下的.Rmd檔全刪了，這都不是我要的<br />
-</li>
-<li>我可以開一個新的.Rmd檔，最上面不能有YAML設定，而是以 <code># Level 1 Header</code>當開頭<br />
-</li>
-<li>這個Header就會是到時候顯示出來的章節名稱</li>
-</ul>
-</div>
-<div id="關閉jekyll" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> 關閉Jekyll</h2>
-<ul>
-<li>之後我們如果想發佈在GitHub pages，那需要先關閉Jekyll。因為GitHub Pages預設會使用Jekull來建立你的statis site，但，R Markdown相關的網頁，不需要用Jekyll。</li>
-<li>要做到這件事，就是在專案根目錄下，建立一個<code>.nojekyll</code>的空資料夾即可</li>
-</ul>
-</div>
-<div id="build-a-book" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> Build a book</h2>
-<div id="不要按knit" class="section level3" number="1.7.1">
-<h3><span class="header-section-number">1.7.1</span> 不要按<code>Knit</code></h3>
-<ul>
-<li>不要按 <code>Knit</code>來compile各個.Rmd檔，如果不小心按了，那再自己把<code>_book</code>這個資料夾清掉</li>
-</ul>
-</div>
-<div id="按preview-book來build-gitbook" class="section level3" number="1.7.2">
-<h3><span class="header-section-number">1.7.2</span> 按Preview Book來build gitbook</h3>
-<ul>
-<li><p>如果你想要render出網頁電子書格式(gitbook)，那就在Addins的下拉式選單中，選取<code>Preview Book</code>，就會完成compile ():</p>
-<ul>
-<li>把index.Rmd執行一次，得到index.html，放到<code>./docs</code>之中，這會是首頁<br />
-</li>
-<li>把所有.Rmd檔都執行一次，得到一堆.html檔，都放到<code>./docs</code>之中<br />
-</li>
-<li>按章節順序組出來<br />
-</li>
-</ul></li>
-<li><p>上面的做法，等同於在console中key入：<code>bookdown::serve_book()</code>，或是，<code>bookdown::render_book("index.Rmd")</code></p></li>
-<li><p>他在背後做的事，可整理成下圖：</p></li>
-</ul>
-<p><img src="pics/build.jpeg" /></p>
-</div>
-<div id="key-入-preview_chaptermy-chapter.rmd" class="section level3" number="1.7.3">
-<h3><span class="header-section-number">1.7.3</span> key 入 <code>preview_chapter("my-chapter.Rmd")</code></h3>
-<ul>
-<li>那這樣做，就像以前在RMarkdown中，對<code>my-chapter.Rmd</code>點<code>Knit</code>。但記得，在bookdown的世界，不要再點<code>Knit</code>了，所以才這樣做。<br />
-</li>
-<li>這樣做的好處是，不用compile所有.Rmd檔，只要compile你指定的<code>my-chapter.Rmd</code>就好</li>
-</ul>
-</div>
-<div id="一次build好幾種格式的book" class="section level3" number="1.7.4">
-<h3><span class="header-section-number">1.7.4</span> 一次build好幾種格式的book</h3>
-<ul>
-<li>如果你想同時build: gitbook(i.e. 網頁電子書)、pdf_book、epub_book，那你可以按<code>Build</code>頁籤下的<code>Build Book</code>，他就會一次幫你build完</li>
-<li>如果你在<code>_output.yml</code>中，只有設定<code>bookdown::gitbook:</code>，那其實你用這邊的<code>Build Book</code>，或是剛剛講的<code>Preview Book</code>，其實是完全一樣的</li>
-</ul>
-</div>
-</div>
-<div id="push到github" class="section level2" number="1.8">
-<h2><span class="header-section-number">1.8</span> push到github</h2>
-<ul>
-<li>在github先開個專案，名稱取的和現在這個專案一樣，記得不要勾README<br />
-</li>
-<li>接著就push上去吧！</li>
-</ul>
-<pre><code>git remote add origin git@github.com:LeeHank/bookdown_tutorial.git
-git push -u origin master</code></pre>
-<ul>
-<li>接著進到github的這個專案，選上方的<code>Settings</code>，再從左邊的分類中找到<code>Pages</code>。<br />
-</li>
-<li>在source的地方，選<code>Branch:master</code>，以及<code>/docs</code>，按下save，就搞定了<br />
-</li>
-<li>他會顯示，我們的網頁被publish在 <a href="https://leehank.github.io/bookdown_tutorial/" class="uri">https://leehank.github.io/bookdown_tutorial/</a><br />
-</li>
-<li>所以這串網址很規律：<code>https://{username}.github.in/{repository}</code></li>
-</ul>
-
-</div>
+<div id="page-not-found" class="section level1">
+<h1>Page not found</h1>
+<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
+<p>You may want to try searching to find the page's new location, or use
+the table of contents to find the page you are looking for.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="detail.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

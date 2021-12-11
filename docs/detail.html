@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Detail | Bookdown Tutorial</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Detail | Bookdown Tutorial" />
   <meta property="og:type" content="book" />
   
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="github-repo" content="LeeHank/temp.spat.pca3" />
+  <meta name="github-repo" content="LeeHank/bookdown_tutorial" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 2 Detail | Bookdown Tutorial" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Hank Lee" />
 
 
-<meta name="date" content="2021-04-30" />
+<meta name="date" content="2021-12-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 <link rel="prev" href="get-started.html"/>
 
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -66,7 +69,19 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#intro"><i class="fa fa-check"></i><b>0.1</b> Intro</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#cheatsheet"><i class="fa fa-check"></i><b>0.2</b> Cheatsheet</a>
+<ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#建立-r-project-renvgitbookdown"><i class="fa fa-check"></i><b>0.2.1</b> 建立 R Project (renv+git+bookdown)</a></li>
+<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#修改-_bookdown.yml-內容"><i class="fa fa-check"></i><b>0.2.2</b> 修改 <code>_bookdown.yml</code> 內容</a></li>
+<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#新增-.nojekyll-檔案"><i class="fa fa-check"></i><b>0.2.3</b> 新增 <code>.nojekyll</code> 檔案</a></li>
+<li class="chapter" data-level="0.2.4" data-path="index.html"><a href="index.html#compile-book"><i class="fa fa-check"></i><b>0.2.4</b> Compile book</a></li>
+<li class="chapter" data-level="0.2.5" data-path="index.html"><a href="index.html#commit-push"><i class="fa fa-check"></i><b>0.2.5</b> Commit &amp; Push</a></li>
+<li class="chapter" data-level="0.2.6" data-path="index.html"><a href="index.html#到-github-網頁做設定"><i class="fa fa-check"></i><b>0.2.6</b> 到 Github 網頁做設定</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="get-started.html"><a href="get-started.html"><i class="fa fa-check"></i><b>1</b> Get Started</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="get-started.html"><a href="get-started.html#初始化bookdown專案"><i class="fa fa-check"></i><b>1.1</b> 初始化bookdown專案</a></li>
@@ -82,6 +97,7 @@
 <li class="chapter" data-level="1.7.3" data-path="get-started.html"><a href="get-started.html#key-入-preview_chaptermy-chapter.rmd"><i class="fa fa-check"></i><b>1.7.3</b> key 入 <code>preview_chapter("my-chapter.Rmd")</code></a></li>
 <li class="chapter" data-level="1.7.4" data-path="get-started.html"><a href="get-started.html#一次build好幾種格式的book"><i class="fa fa-check"></i><b>1.7.4</b> 一次build好幾種格式的book</a></li>
 </ul></li>
+<li class="chapter" data-level="1.8" data-path="get-started.html"><a href="get-started.html#push到github"><i class="fa fa-check"></i><b>1.8</b> push到github</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="detail.html"><a href="detail.html"><i class="fa fa-check"></i><b>2</b> Detail</a>
 <ul>
@@ -380,7 +396,7 @@ Here is the second appendix chapter.</code></pre>
 </ul>
 <pre><code>title: A Minimal Book Example
 author: Yihui Xie
-date: &#39;2021-04-30&#39;
+date: &#39;2021-12-11&#39;
 site: bookdown::bookdown_site
 documentclass: book
 description: This is a minimal example of using the bookdown package to write a book.
@@ -440,7 +456,6 @@ link-citations: yes</code></pre>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -459,6 +474,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": false
 },
 "fontsettings": {
@@ -479,6 +495,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

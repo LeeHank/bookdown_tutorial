@@ -202,7 +202,7 @@ bookdown::gitbook:
 ```
 title: A Minimal Book Example
 author: Yihui Xie
-date: '2021-04-30'
+date: '2021-12-11'
 site: bookdown::bookdown_site
 documentclass: book
 description: This is a minimal example of using the bookdown package to write a book.

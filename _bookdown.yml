@@ -1,11 +1,12 @@
-book_filename: "bookdown_tutorial"
-delete_merged_file: true
-output_dir: docs   
+book_filename: "bookdown_tutorial" # 書名
+output_dir: docs # 將 markdown 轉成 html後，寫到這個資料夾
+delete_merged_file: true # 
 language:
   ui:
     chapter_name: "Chapter "
-new_session: true
-rmd_files:
+new_session: true # 獨立的對每個.Rmd檔做complie，並生出各自的html檔，各rmd的變數不打架
+# 章節排列方式
+rmd_files: 
 - index.Rmd
 - 01-get_started.Rmd
 - 02-detail.Rmd

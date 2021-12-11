@@ -1,3 +1,11 @@
+intro
+cheatsheet
+建立-r-project-renvgitbookdown
+修改-_bookdown.yml-內容
+新增-.nojekyll-檔案
+compile-book
+commit-push
+到-github-網頁做設定
 get-started
 初始化bookdown專案
 更新_bookdown.yml中的內容
@@ -10,6 +18,7 @@ build-a-book
 按preview-book來build-gitbook
 key-入-preview_chaptermy-chapter.rmd
 一次build好幾種格式的book
+push到github
 detail
 調整地圖
 與章節組織有關的調整
@@ -35,3 +44,8 @@ figures-captions
 tables
 citations
 footnotes
+修改三個-yaml-檔
+修改-_output.yml-內容
+修改-index.rmd-最上面的-yaml
+用-build-compile-整本書
+用-preview-compile-指定的-.rmd-file
