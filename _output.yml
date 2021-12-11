@@ -2,6 +2,9 @@ bookdown::gitbook:
   config:
     toc:
       collapse: section
+    edit:
+      link: https://github.com/LeeHank/bookdown_tutorial/edit/master/%s
+      text: "Suggest an edit"
     download: ["rmd"]
     sharing:
       github: yes

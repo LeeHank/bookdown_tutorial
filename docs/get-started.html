@@ -75,7 +75,7 @@
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#cheatsheet"><i class="fa fa-check"></i><b>0.2</b> Cheatsheet</a>
 <ul>
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#建立-r-project-renvgitbookdown"><i class="fa fa-check"></i><b>0.2.1</b> 建立 R Project (renv+git+bookdown)</a></li>
-<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#修改-_bookdown.yml-內容"><i class="fa fa-check"></i><b>0.2.2</b> 修改 <code>_bookdown.yml</code> 內容</a></li>
+<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#修改三個-yaml-檔"><i class="fa fa-check"></i><b>0.2.2</b> 修改三個 YAML 檔</a></li>
 <li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#新增-.nojekyll-檔案"><i class="fa fa-check"></i><b>0.2.3</b> 新增 <code>.nojekyll</code> 檔案</a></li>
 <li class="chapter" data-level="0.2.4" data-path="index.html"><a href="index.html#compile-book"><i class="fa fa-check"></i><b>0.2.4</b> Compile book</a></li>
 <li class="chapter" data-level="0.2.5" data-path="index.html"><a href="index.html#commit-push"><i class="fa fa-check"></i><b>0.2.5</b> Commit &amp; Push</a></li>
@@ -152,7 +152,7 @@
 <li><p>開始一個bookdown專案很簡單，先在Rstudio開啟一個新專案，選bookdown<br />
 </p></li>
 <li><p>開起來後，這個專案資料夾中，就會長成下圖：<br />
-<img src="pics/initial.jpg" /></p></li>
+<img src="./pics/initial.jpg" /></p></li>
 <li><p>可以看到，這個資料夾下的結構，包括幾大塊：</p>
 <ul>
 <li>3 個 YAML檔： _bookdown.yml, _output.yml, index.Rmd<br />
@@ -296,7 +296,7 @@ bookdown::epub_book: default</code></pre>
 <li><p>上面的做法，等同於在console中key入：<code>bookdown::serve_book()</code>，或是，<code>bookdown::render_book("index.Rmd")</code></p></li>
 <li><p>他在背後做的事，可整理成下圖：</p></li>
 </ul>
-<p><img src="pics/build.jpeg" /></p>
+<p><img src="./pics/build.jpeg" /></p>
 </div>
 <div id="key-入-preview_chaptermy-chapter.rmd" class="section level3" number="1.7.3">
 <h3><span class="header-section-number">1.7.3</span> key 入 <code>preview_chapter("my-chapter.Rmd")</code></h3>
@@ -372,8 +372,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/LeeHank/bookdown_tutorial/edit/master/01-get_started.Rmd",
+"text": "Suggest an edit"
 },
 "history": {
 "link": null,
@@ -383,7 +383,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["https://github.com/LeeHank/bookdown_tutorial/raw/master/01-get_started.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null

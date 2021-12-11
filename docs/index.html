@@ -171,7 +171,7 @@
 <li>如果是全新 project，就跟之前一樣，建立一個 renv+git的專案<br />
 </li>
 <li>在 r console 中，輸入 <code>bookdown:::bookdown_skeleton(getwd())</code>，就會幫你新增好 bookdown 必要的檔案和資料夾模板，例如下圖：
-<img src="./pics/bookdown-skeleton-files.jpeg/" /><br />
+<img src="./pics/bookdown-skeleton-files.jpeg" /><br />
 </li>
 <li>把專案整個關閉，再重開，RStudio就會讀到這是個 bookdwon 專案，幫你把右上角的 pannel 裡面，多加上一個 <code>Build</code> 的 tab 可以使用</li>
 </ul>
@@ -275,7 +275,10 @@ git push -u origin master</code></pre>
 </li>
 <li>他會顯示，我們的網頁被publish在 <a href="https://leehank.github.io/bookdown_tutorial/" class="uri">https://leehank.github.io/bookdown_tutorial/</a><br />
 </li>
-<li>所以這串網址很規律：<code>https://{username}.github.in/{repository}</code></li>
+<li>所以這串網址很規律：<code>https://{username}.github.in/{repository}</code><br />
+</li>
+<li>到 github 的資料夾頁面，右上角的 <code>About</code> 有個齒輪，把剛剛的 website 網址加入進去，那之後瀏覽code的時候，就可以看到網址的提示<br />
+<img src="./pics/github_about.jpg" /></li>
 </ul>
 
 </div>
@@ -318,8 +321,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/LeeHank/bookdown_tutorial/edit/master/index.Rmd",
+"text": "Suggest an edit"
 },
 "history": {
 "link": null,
@@ -329,7 +332,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["https://github.com/LeeHank/bookdown_tutorial/raw/master/index.Rmd"],
 "search": {
 "engine": "fuse",
 "options": null

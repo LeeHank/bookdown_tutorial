@@ -1,9 +1,14 @@
 intro
 cheatsheet
 建立-r-project-renvgitbookdown
+修改三個-yaml-檔
 修改-_bookdown.yml-內容
+修改-_output.yml-內容
+修改-index.rmd-最上面的-yaml
 新增-.nojekyll-檔案
 compile-book
+用-build-compile-整本書
+用-preview-compile-指定的-.rmd-file
 commit-push
 到-github-網頁做設定
 get-started
@@ -44,8 +49,3 @@ figures-captions
 tables
 citations
 footnotes
-修改三個-yaml-檔
-修改-_output.yml-內容
-修改-index.rmd-最上面的-yaml
-用-build-compile-整本書
-用-preview-compile-指定的-.rmd-file

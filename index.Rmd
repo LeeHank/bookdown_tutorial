@@ -23,7 +23,7 @@ github-repo: LeeHank/bookdown_tutorial
 
 * 如果是全新 project，就跟之前一樣，建立一個 renv+git的專案  
 * 在 r console 中，輸入 `bookdown:::bookdown_skeleton(getwd())`，就會幫你新增好 bookdown 必要的檔案和資料夾模板，例如下圖： 
-![](./pics/bookdown-skeleton-files.jpeg/)  
+![](./pics/bookdown-skeleton-files.jpeg)  
 * 把專案整個關閉，再重開，RStudio就會讀到這是個 bookdwon 專案，幫你把右上角的 pannel 裡面，多加上一個 `Build` 的 tab 可以使用  
 
 ### 修改三個 YAML 檔  
@@ -113,3 +113,5 @@ git push -u origin master
 * 在source的地方，選`Branch:master`，以及`/docs`，按下save，就搞定了  
 * 他會顯示，我們的網頁被publish在 https://leehank.github.io/bookdown_tutorial/  
 * 所以這串網址很規律：`https://{username}.github.in/{repository}`  
+* 到 github 的資料夾頁面，右上角的 `About` 有個齒輪，把剛剛的 website 網址加入進去，那之後瀏覽code的時候，就可以看到網址的提示  
+![](./pics/github_about.jpg)  
